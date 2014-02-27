@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.xst" -ofn "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPM7003-Papilio-One-LogicStart-MegaWing-general.ucf -p xc3s500e-vq100-4 GPPTestCircuit.ngc GPPTestCircuit.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o GPPTestCircuit_map.ncd GPPTestCircuit.ngd GPPTestCircuit.pcf 
+par -w -intstyle ise -ol high -t 1 GPPTestCircuit_map.ncd GPPTestCircuit.ncd GPPTestCircuit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml GPPTestCircuit.twx GPPTestCircuit.ncd -o GPPTestCircuit.twr GPPTestCircuit.pcf -ucf BPM7003-Papilio-One-LogicStart-MegaWing-general.ucf 
+bitgen -intstyle ise -f GPPTestCircuit.ut GPPTestCircuit.ncd 

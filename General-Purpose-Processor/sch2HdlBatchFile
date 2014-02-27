@@ -1,0 +1,8 @@
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/ControlALU.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/ControlALU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/Instruction_Decoder.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/Instruction_Decoder.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/GPP.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/GPP.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/Instruction_ROM.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/Instruction_ROM.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/ALU.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/ALU.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/RegFile.sch
+sch2hdl,-intstyle,ise,-family,spartan3e,-flat,-suppress,-vhdl,C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_1.vhf,-w,C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_1.sch

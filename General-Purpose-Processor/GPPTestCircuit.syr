@@ -1,0 +1,1100 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: GPPTestCircuit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GPPTestCircuit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GPPTestCircuit"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : GPPTestCircuit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux4_8.vhd" in Library work.
+Entity <Mux4_8> compiled.
+Entity <Mux4_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_8.vhd" in Library work.
+Entity <RegParallelLoad_8> compiled.
+Entity <RegParallelLoad_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux16_9.vhd" in Library work.
+Entity <Mux16_9> compiled.
+Entity <Mux16_9> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux16_3.vhd" in Library work.
+Entity <Mux16_3> compiled.
+Entity <Mux16_3> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux16_4.vhd" in Library work.
+Entity <Mux16_4> compiled.
+Entity <Mux16_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Adder_4.vhd" in Library work.
+Entity <Adder_4> compiled.
+Entity <Adder_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux2_4.vhd" in Library work.
+Entity <Mux2_4> compiled.
+Entity <Mux2_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux8_8.vhd" in Library work.
+Entity <Mux8_8> compiled.
+Entity <Mux8_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/BitXor2_8.vhd" in Library work.
+Entity <BitXor2_8> compiled.
+Entity <BitXor2_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/BitAnd2_8.vhd" in Library work.
+Entity <BitAnd2_8> compiled.
+Entity <BitAnd2_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/BitOr2_8.vhd" in Library work.
+Entity <BitOr2_8> compiled.
+Entity <BitOr2_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Adder_8.vhd" in Library work.
+Entity <Adder_8> compiled.
+Entity <Adder_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/ShiftRightLogical_8.vhd" in Library work.
+Entity <ShiftRightLogical_8> compiled.
+Entity <ShiftRightLogical_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Subtractor_8.vhd" in Library work.
+Entity <Subtractor_8> compiled.
+Entity <Subtractor_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/EqualityComp_8.vhd" in Library work.
+Entity <EqualityComp_8> compiled.
+Entity <EqualityComp_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Multiplier_Overflow_8.vhd" in Library work.
+Entity <Multiplier_Overflow_8> compiled.
+Entity <Multiplier_Overflow_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Mux2_8.vhd" in Library work.
+Entity <Mux2_8> compiled.
+Entity <Mux2_8> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_4.vhd" in Library work.
+Entity <RegParallelLoad_4> compiled.
+Entity <RegParallelLoad_4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/synchronizer.vhd" in Library work.
+Entity <synchronizer> compiled.
+Entity <synchronizer> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/debouncer.vhd" in Library work.
+Entity <debouncer> compiled.
+Entity <debouncer> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/pulser.vhd" in Library work.
+Entity <pulser> compiled.
+Entity <pulser> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/sseg_driver.vhd" in Library work.
+Entity <sseg_driver> compiled.
+Entity <sseg_driver> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf" in Library work.
+Entity <M2_1E_MXILINX_GPPTestCircuit> compiled.
+Entity <M2_1E_MXILINX_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <M8_1E_MXILINX_GPPTestCircuit> compiled.
+Entity <M8_1E_MXILINX_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <ALU_MUSER_GPPTestCircuit> compiled.
+Entity <ALU_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <D2_4E_MXILINX_GPPTestCircuit> compiled.
+Entity <D2_4E_MXILINX_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <RegFile_MUSER_GPPTestCircuit> compiled.
+Entity <RegFile_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <Instruction_ROM_MUSER_GPPTestCircuit> compiled.
+Entity <Instruction_ROM_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <ControlALU_MUSER_GPPTestCircuit> compiled.
+Entity <ControlALU_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <Instruction_Decoder_MUSER_GPPTestCircuit> compiled.
+Entity <Instruction_Decoder_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <RegParallelLoad_1_MUSER_GPPTestCircuit> compiled.
+Entity <RegParallelLoad_1_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <GPP_MUSER_GPPTestCircuit> compiled.
+Entity <GPP_MUSER_GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Entity <GPPTestCircuit> compiled.
+Entity <GPPTestCircuit> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/GPP.vhf" in Library work.
+Entity <M2_1E_MXILINX_GPP> compiled.
+Entity <M2_1E_MXILINX_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <M8_1E_MXILINX_GPP> compiled.
+Entity <M8_1E_MXILINX_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <ALU_MUSER_GPP> compiled.
+Entity <ALU_MUSER_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <D2_4E_MXILINX_GPP> compiled.
+Entity <D2_4E_MXILINX_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <RegFile_MUSER_GPP> compiled.
+Entity <RegFile_MUSER_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <Instruction_ROM_MUSER_GPP> compiled.
+Entity <Instruction_ROM_MUSER_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <ControlALU_MUSER_GPP> compiled.
+Entity <ControlALU_MUSER_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <Instruction_Decoder_MUSER_GPP> compiled.
+Entity <Instruction_Decoder_MUSER_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <RegParallelLoad_1_MUSER_GPP> compiled.
+Entity <RegParallelLoad_1_MUSER_GPP> (Architecture <BEHAVIORAL>) compiled.
+Entity <GPP> compiled.
+Entity <GPP> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/ALU.vhf" in Library work.
+Entity <M2_1E_MXILINX_ALU> compiled.
+Entity <M2_1E_MXILINX_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <M8_1E_MXILINX_ALU> compiled.
+Entity <M8_1E_MXILINX_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <ALU> compiled.
+Entity <ALU> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/ControlALU.vhf" in Library work.
+Entity <ControlALU> compiled.
+Entity <ControlALU> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Instruction_Decoder.vhf" in Library work.
+Entity <Instruction_Decoder> compiled.
+Entity <Instruction_Decoder> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/Instruction_ROM.vhf" in Library work.
+Entity <Instruction_ROM> compiled.
+Entity <Instruction_ROM> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf" in Library work.
+Entity <D2_4E_MXILINX_RegFile> compiled.
+Entity <D2_4E_MXILINX_RegFile> (Architecture <BEHAVIORAL>) compiled.
+Entity <RegFile> compiled.
+Entity <RegFile> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_1.vhf" in Library work.
+Entity <RegParallelLoad_1> compiled.
+Entity <RegParallelLoad_1> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <GPP_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <synchronizer> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <Behavioral>) with generics.
+	RegWidth = 16
+
+Analyzing hierarchy for entity <pulser> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <sseg_driver> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ControlALU_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <RegParallelLoad_1_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <ALU_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <Mux2_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <Instruction_ROM_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <Instruction_Decoder_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <RegParallelLoad_4> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 4
+
+Analyzing hierarchy for entity <RegFile_MUSER_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <Mux16_4> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 4
+
+Analyzing hierarchy for entity <Adder_4> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 4
+
+Analyzing hierarchy for entity <Mux2_4> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 4
+
+Analyzing hierarchy for entity <Mux8_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <BitXor2_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <BitAnd2_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <BitOr2_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <Adder_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <ShiftRightLogical_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <Subtractor_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <EqualityComp_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <M8_1E_MXILINX_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <Multiplier_Overflow_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <Mux16_9> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 9
+
+Analyzing hierarchy for entity <Mux16_3> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 3
+
+Analyzing hierarchy for entity <Mux4_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <RegParallelLoad_8> in library <work> (architecture <Behavioral>) with generics.
+	BusWidth = 8
+
+Analyzing hierarchy for entity <D2_4E_MXILINX_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <M2_1E_MXILINX_GPPTestCircuit> in library <work> (architecture <BEHAVIORAL>).
+
+WARNING:Xst:2592 - "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf" line 889: generic/parameter on component <BusWidth> overrides attribute on component. Attribute is ignored.
+WARNING:Xst:2592 - "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf" line 758: generic/parameter on component <BusWidth> overrides attribute on component. Attribute is ignored.
+WARNING:Xst:2592 - "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf" line 667: generic/parameter on component <BusWidth> overrides attribute on component. Attribute is ignored.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+Entity <GPPTestCircuit> analyzed. Unit <GPPTestCircuit> generated.
+
+Analyzing Entity <GPP_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+Entity <GPP_MUSER_GPPTestCircuit> analyzed. Unit <GPP_MUSER_GPPTestCircuit> generated.
+
+Analyzing Entity <ControlALU_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:753 - "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf" line 778: Unconnected output port 'carry' of component 'Adder_4'.
+Entity <ControlALU_MUSER_GPPTestCircuit> analyzed. Unit <ControlALU_MUSER_GPPTestCircuit> generated.
+
+Analyzing generic Entity <Mux16_4> in library <work> (Architecture <Behavioral>).
+	BusWidth = 4
+Entity <Mux16_4> analyzed. Unit <Mux16_4> generated.
+
+Analyzing generic Entity <Adder_4> in library <work> (Architecture <Behavioral>).
+	BusWidth = 4
+Entity <Adder_4> analyzed. Unit <Adder_4> generated.
+
+Analyzing generic Entity <Mux2_4> in library <work> (Architecture <Behavioral>).
+	BusWidth = 4
+Entity <Mux2_4> analyzed. Unit <Mux2_4> generated.
+
+Analyzing Entity <RegParallelLoad_1_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "INIT =  0" for instance <XLXI_1> in unit <RegParallelLoad_1_MUSER_GPPTestCircuit>.
+Entity <RegParallelLoad_1_MUSER_GPPTestCircuit> analyzed. Unit <RegParallelLoad_1_MUSER_GPPTestCircuit> generated.
+
+Analyzing Entity <ALU_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "HU_SET =  XLXI_41_4" for instance <XLXI_41> in unit <ALU_MUSER_GPPTestCircuit>.
+Entity <ALU_MUSER_GPPTestCircuit> analyzed. Unit <ALU_MUSER_GPPTestCircuit> generated.
+
+Analyzing generic Entity <Mux8_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <Mux8_8> analyzed. Unit <Mux8_8> generated.
+
+Analyzing generic Entity <BitXor2_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <BitXor2_8> analyzed. Unit <BitXor2_8> generated.
+
+Analyzing generic Entity <BitAnd2_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <BitAnd2_8> analyzed. Unit <BitAnd2_8> generated.
+
+Analyzing generic Entity <BitOr2_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <BitOr2_8> analyzed. Unit <BitOr2_8> generated.
+
+Analyzing generic Entity <Adder_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <Adder_8> analyzed. Unit <Adder_8> generated.
+
+Analyzing generic Entity <ShiftRightLogical_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <ShiftRightLogical_8> analyzed. Unit <ShiftRightLogical_8> generated.
+
+Analyzing generic Entity <Subtractor_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <Subtractor_8> analyzed. Unit <Subtractor_8> generated.
+
+Analyzing generic Entity <EqualityComp_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <EqualityComp_8> analyzed. Unit <EqualityComp_8> generated.
+
+Analyzing Entity <M8_1E_MXILINX_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "HU_SET =  I_M01_3" for instance <I_M01> in unit <M8_1E_MXILINX_GPPTestCircuit>.
+    Set user-defined property "HU_SET =  I_M23_2" for instance <I_M23> in unit <M8_1E_MXILINX_GPPTestCircuit>.
+    Set user-defined property "HU_SET =  I_M45_1" for instance <I_M45> in unit <M8_1E_MXILINX_GPPTestCircuit>.
+    Set user-defined property "HU_SET =  I_M67_0" for instance <I_M67> in unit <M8_1E_MXILINX_GPPTestCircuit>.
+Entity <M8_1E_MXILINX_GPPTestCircuit> analyzed. Unit <M8_1E_MXILINX_GPPTestCircuit> generated.
+
+Analyzing Entity <M2_1E_MXILINX_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+Entity <M2_1E_MXILINX_GPPTestCircuit> analyzed. Unit <M2_1E_MXILINX_GPPTestCircuit> generated.
+
+Analyzing generic Entity <Multiplier_Overflow_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <Multiplier_Overflow_8> analyzed. Unit <Multiplier_Overflow_8> generated.
+
+Analyzing generic Entity <Mux2_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <Mux2_8> analyzed. Unit <Mux2_8> generated.
+
+Analyzing Entity <Instruction_ROM_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+Entity <Instruction_ROM_MUSER_GPPTestCircuit> analyzed. Unit <Instruction_ROM_MUSER_GPPTestCircuit> generated.
+
+Analyzing generic Entity <Mux16_9> in library <work> (Architecture <Behavioral>).
+	BusWidth = 9
+Entity <Mux16_9> analyzed. Unit <Mux16_9> generated.
+
+Analyzing Entity <Instruction_Decoder_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+Entity <Instruction_Decoder_MUSER_GPPTestCircuit> analyzed. Unit <Instruction_Decoder_MUSER_GPPTestCircuit> generated.
+
+Analyzing generic Entity <Mux16_3> in library <work> (Architecture <Behavioral>).
+	BusWidth = 3
+Entity <Mux16_3> analyzed. Unit <Mux16_3> generated.
+
+Analyzing generic Entity <RegParallelLoad_4> in library <work> (Architecture <Behavioral>).
+	BusWidth = 4
+Entity <RegParallelLoad_4> analyzed. Unit <RegParallelLoad_4> generated.
+
+Analyzing Entity <RegFile_MUSER_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+    Set user-defined property "HU_SET =  XLXI_24_5" for instance <XLXI_24> in unit <RegFile_MUSER_GPPTestCircuit>.
+Entity <RegFile_MUSER_GPPTestCircuit> analyzed. Unit <RegFile_MUSER_GPPTestCircuit> generated.
+
+Analyzing generic Entity <Mux4_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <Mux4_8> analyzed. Unit <Mux4_8> generated.
+
+Analyzing generic Entity <RegParallelLoad_8> in library <work> (Architecture <Behavioral>).
+	BusWidth = 8
+Entity <RegParallelLoad_8> analyzed. Unit <RegParallelLoad_8> generated.
+
+Analyzing Entity <D2_4E_MXILINX_GPPTestCircuit> in library <work> (Architecture <BEHAVIORAL>).
+Entity <D2_4E_MXILINX_GPPTestCircuit> analyzed. Unit <D2_4E_MXILINX_GPPTestCircuit> generated.
+
+Analyzing Entity <synchronizer> in library <work> (Architecture <Behavioral>).
+    Set property "SHREG_EXTRACT = NO" for signal <q1>.
+    Set property "SHREG_EXTRACT = NO" for signal <q2>.
+    Set property "SHREG_EXTRACT = NO" for signal <q3>.
+Entity <synchronizer> analyzed. Unit <synchronizer> generated.
+
+Analyzing generic Entity <debouncer> in library <work> (Architecture <Behavioral>).
+	RegWidth = 16
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+Analyzing Entity <pulser> in library <work> (Architecture <Behavioral>).
+Entity <pulser> analyzed. Unit <pulser> generated.
+
+Analyzing Entity <sseg_driver> in library <work> (Architecture <Behavioral>).
+Entity <sseg_driver> analyzed. Unit <sseg_driver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <synchronizer>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/synchronizer.vhd".
+    Found 1-bit register for signal <q1>.
+    Found 1-bit register for signal <q2>.
+    Found 1-bit register for signal <q3>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <synchronizer> synthesized.
+
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/debouncer.vhd".
+    Found 16-bit up counter for signal <bounce_cntr>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <pulser>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/pulser.vhd".
+    Found 1-bit register for signal <q1>.
+    Found 1-bit register for signal <q2>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pulser> synthesized.
+
+
+Synthesizing Unit <sseg_driver>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/sseg_driver.vhd".
+    Found 16x7-bit ROM for signal <cathodes>.
+    Found 4x4-bit ROM for signal <anodes>.
+    Found 2-bit up counter for signal <current_display>.
+    Found 4-bit 4-to-1 multiplexer for signal <current_nibble>.
+    Found 17-bit up counter for signal <cycle_count>.
+    Found 1-bit 4-to-1 multiplexer for signal <dp_not>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   2 Counter(s).
+	inferred   5 Multiplexer(s).
+Unit <sseg_driver> synthesized.
+
+
+Synthesizing Unit <Mux2_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux2_8.vhd".
+Unit <Mux2_8> synthesized.
+
+
+Synthesizing Unit <RegParallelLoad_4>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_4.vhd".
+    Found 4-bit register for signal <q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <RegParallelLoad_4> synthesized.
+
+
+Synthesizing Unit <Mux16_4>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux16_4.vhd".
+    Found 4-bit 16-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Mux16_4> synthesized.
+
+
+Synthesizing Unit <Adder_4>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Adder_4.vhd".
+    Found 5-bit adder for signal <with_carry>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder_4> synthesized.
+
+
+Synthesizing Unit <Mux2_4>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux2_4.vhd".
+Unit <Mux2_4> synthesized.
+
+
+Synthesizing Unit <Mux8_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux8_8.vhd".
+    Found 8-bit 8-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <Mux8_8> synthesized.
+
+
+Synthesizing Unit <BitXor2_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/BitXor2_8.vhd".
+    Found 8-bit xor2 for signal <o>.
+Unit <BitXor2_8> synthesized.
+
+
+Synthesizing Unit <BitAnd2_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/BitAnd2_8.vhd".
+Unit <BitAnd2_8> synthesized.
+
+
+Synthesizing Unit <BitOr2_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/BitOr2_8.vhd".
+Unit <BitOr2_8> synthesized.
+
+
+Synthesizing Unit <Adder_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Adder_8.vhd".
+    Found 9-bit adder for signal <with_carry>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder_8> synthesized.
+
+
+Synthesizing Unit <ShiftRightLogical_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/ShiftRightLogical_8.vhd".
+WARNING:Xst:647 - Input <i<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <ShiftRightLogical_8> synthesized.
+
+
+Synthesizing Unit <Subtractor_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Subtractor_8.vhd".
+    Found 9-bit subtractor for signal <with_borrow>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Subtractor_8> synthesized.
+
+
+Synthesizing Unit <EqualityComp_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/EqualityComp_8.vhd".
+    Found 8-bit comparator equal for signal <eq$cmp_eq0000> created at line 20.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <EqualityComp_8> synthesized.
+
+
+Synthesizing Unit <Multiplier_Overflow_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Multiplier_Overflow_8.vhd".
+    Found 8x8-bit multiplier for signal <full_product>.
+    Summary:
+	inferred   1 Multiplier(s).
+Unit <Multiplier_Overflow_8> synthesized.
+
+
+Synthesizing Unit <Mux16_9>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux16_9.vhd".
+    Found 9-bit 16-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   9 Multiplexer(s).
+Unit <Mux16_9> synthesized.
+
+
+Synthesizing Unit <Mux16_3>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux16_3.vhd".
+    Found 3-bit 16-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <Mux16_3> synthesized.
+
+
+Synthesizing Unit <Mux4_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/Mux4_8.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <o>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <Mux4_8> synthesized.
+
+
+Synthesizing Unit <RegParallelLoad_8>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_8.vhd".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <RegParallelLoad_8> synthesized.
+
+
+Synthesizing Unit <ControlALU_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <ControlALU_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <RegParallelLoad_1_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <RegParallelLoad_1_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <Instruction_ROM_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <Instruction_ROM_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <Instruction_Decoder_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <Instruction_Decoder_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <M2_1E_MXILINX_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <D2_4E_MXILINX_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <D2_4E_MXILINX_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <RegFile_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <RegFile_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <M8_1E_MXILINX_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <ALU_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <ALU_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <GPP_MUSER_GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <GPP_MUSER_GPPTestCircuit> synthesized.
+
+
+Synthesizing Unit <GPPTestCircuit>.
+    Related source file is "C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf".
+Unit <GPPTestCircuit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 3
+ 5-bit adder                                           : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 10
+ 1-bit register                                        : 5
+ 4-bit register                                        : 1
+ 8-bit register                                        : 4
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 1
+ 3-bit 16-to-1 multiplexer                             : 1
+ 4-bit 16-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 16-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 3
+ 5-bit adder                                           : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 1
+ 3-bit 16-to-1 multiplexer                             : 1
+ 4-bit 16-to-1 multiplexer                             : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 8-bit 4-to-1 multiplexer                              : 2
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 16-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GPPTestCircuit> ...
+
+Optimizing unit <M2_1E_MXILINX_GPPTestCircuit> ...
+
+Optimizing unit <D2_4E_MXILINX_GPPTestCircuit> ...
+
+Optimizing unit <ControlALU_MUSER_GPPTestCircuit> ...
+
+Optimizing unit <M8_1E_MXILINX_GPPTestCircuit> ...
+
+Optimizing unit <ALU_MUSER_GPPTestCircuit> ...
+
+Optimizing unit <GPP_MUSER_GPPTestCircuit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GPPTestCircuit, actual ratio is 2.
+FlipFlop GPP_Test/PROGRAM_COUNTER/q_0 has been replicated 1 time(s)
+FlipFlop GPP_Test/PROGRAM_COUNTER/q_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 81
+ Flip-Flops                                            : 81
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GPPTestCircuit.ngr
+Top Level Output File Name         : GPPTestCircuit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 376
+#      AND2                        : 3
+#      AND2B1                      : 1
+#      AND3                        : 5
+#      AND3B1                      : 6
+#      AND3B2                      : 1
+#      BUF                         : 5
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 31
+#      LUT2                        : 29
+#      LUT2_L                      : 1
+#      LUT3                        : 82
+#      LUT4                        : 41
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 47
+#      MUXF5                       : 45
+#      MUXF5_L                     : 2
+#      MUXF6                       : 13
+#      OR2                         : 4
+#      VCC                         : 1
+#      XORCY                       : 50
+# FlipFlops/Latches                : 81
+#      FD                          : 23
+#      FDE                         : 41
+#      FDR                         : 1
+#      FDRE                        : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 9
+#      OBUF                        : 20
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                      110  out of   4656     2%  
+ Number of Slice Flip Flops:             81  out of   9312     0%  
+ Number of 4 input LUTs:                192  out of   9312     2%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of     66    45%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)          | Load  |
+-----------------------------------+--------------------------------+-------+
+clk                                | BUFGP                          | 79    |
+XLXI_15/cycle_count_16             | NONE(XLXI_15/current_display_1)| 2     |
+-----------------------------------+--------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 16.665ns (Maximum Frequency: 60.006MHz)
+   Minimum input arrival time before clock: 13.613ns
+   Maximum output required time after clock: 16.607ns
+   Maximum combinational path delay: 13.555ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 16.665ns (frequency: 60.006MHz)
+  Total number of paths / destination ports: 37256 / 151
+-------------------------------------------------------------------------
+Delay:               16.665ns (Levels of Logic = 13)
+  Source:            GPP_Test/PROGRAM_COUNTER/q_3 (FF)
+  Destination:       GPP_Test/C_FLAG/XLXI_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: GPP_Test/PROGRAM_COUNTER/q_3 to GPP_Test/C_FLAG/XLXI_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.591   1.052  GPP_Test/PROGRAM_COUNTER/q_3 (GPP_Test/PROGRAM_COUNTER/q_3)
+     LUT4:I2->O           16   0.704   1.069  GPP_Test/INSTRUCTION_PROM/INSTRUCTION_SELECT/Mmux_o21_1 (GPP_Test/INSTRUCTION_PROM/INSTRUCTION_SELECT/Mmux_o21)
+     LUT3:I2->O            1   0.704   0.000  GPP_Test/REG_FILE/XLXI_2/Mmux_o_3 (GPP_Test/REG_FILE/XLXI_2/Mmux_o_3)
+     MUXF5:I1->O           1   0.321   0.424  GPP_Test/REG_FILE/XLXI_2/Mmux_o_2_f5 (GPP_Test/Output_B<0>)
+     LUT4:I3->O            6   0.704   0.669  GPP_Test/INPUT_SEL/o<0>1 (GPP_Test/XLXN_73<0>)
+     MULT18X18SIO:B0->P10    1   4.602   0.595  GPP_Test/DATA_ALU/XLXI_94/Mmult_full_product (GPP_Test/DATA_ALU/XLXI_94/full_product<10>)
+     LUT4:I0->O            1   0.704   0.424  GPP_Test/DATA_ALU/XLXI_94/overflow12_SW0 (N23)
+     LUT4:I3->O            1   0.704   0.420  GPP_Test/DATA_ALU/XLXI_94/overflow12 (GPP_Test/DATA_ALU/mul_overflow)
+     begin scope: 'GPP_Test/DATA_ALU/XLXI_41'
+     begin scope: 'I_M67'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M67'
+     MUXF5_L:I1->LO        1   0.321   0.000  I_M47 (M47)
+     MUXF6:I1->O           1   0.521   0.000  I_O (O)
+     end scope: 'GPP_Test/DATA_ALU/XLXI_41'
+     FDE:D                     0.308          GPP_Test/C_FLAG/XLXI_1
+    ----------------------------------------
+    Total                     16.665ns (11.592ns logic, 5.073ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_15/cycle_count_16'
+  Clock period: 2.812ns (frequency: 355.619MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.812ns (Levels of Logic = 1)
+  Source:            XLXI_15/current_display_0 (FF)
+  Destination:       XLXI_15/current_display_1 (FF)
+  Source Clock:      XLXI_15/cycle_count_16 rising
+  Destination Clock: XLXI_15/cycle_count_16 rising
+
+  Data Path: XLXI_15/current_display_0 to XLXI_15/current_display_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.591   1.209  XLXI_15/current_display_0 (XLXI_15/current_display_0)
+     LUT2:I0->O            1   0.704   0.000  XLXI_15/Mcount_current_display_xor<1>11 (Result<1>2)
+     FD:D                      0.308          XLXI_15/current_display_1
+    ----------------------------------------
+    Total                      2.812ns (1.603ns logic, 1.209ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 763 / 36
+-------------------------------------------------------------------------
+Offset:              13.613ns (Levels of Logic = 11)
+  Source:            SW<1> (PAD)
+  Destination:       GPP_Test/C_FLAG/XLXI_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW<1> to GPP_Test/C_FLAG/XLXI_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  SW_1_IBUF (SW_1_IBUF)
+     LUT4:I0->O            6   0.704   0.669  GPP_Test/INPUT_SEL/o<1>1 (GPP_Test/XLXN_73<1>)
+     MULT18X18SIO:B1->P10    1   4.602   0.595  GPP_Test/DATA_ALU/XLXI_94/Mmult_full_product (GPP_Test/DATA_ALU/XLXI_94/full_product<10>)
+     LUT4:I0->O            1   0.704   0.424  GPP_Test/DATA_ALU/XLXI_94/overflow12_SW0 (N23)
+     LUT4:I3->O            1   0.704   0.420  GPP_Test/DATA_ALU/XLXI_94/overflow12 (GPP_Test/DATA_ALU/mul_overflow)
+     begin scope: 'GPP_Test/DATA_ALU/XLXI_41'
+     begin scope: 'I_M67'
+     AND3:I0->O            1   0.704   0.420  I_36_30 (M1)
+     OR2:I0->O             1   0.704   0.000  I_36_38 (O)
+     end scope: 'I_M67'
+     MUXF5_L:I1->LO        1   0.321   0.000  I_M47 (M47)
+     MUXF6:I1->O           1   0.521   0.000  I_O (O)
+     end scope: 'GPP_Test/DATA_ALU/XLXI_41'
+     FDE:D                     0.308          GPP_Test/C_FLAG/XLXI_1
+    ----------------------------------------
+    Total                     13.613ns (10.490ns logic, 3.123ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_15/cycle_count_16'
+  Total number of paths / destination ports: 95 / 12
+-------------------------------------------------------------------------
+Offset:              8.104ns (Levels of Logic = 4)
+  Source:            XLXI_15/current_display_0 (FF)
+  Destination:       cathodes<6> (PAD)
+  Source Clock:      XLXI_15/cycle_count_16 rising
+
+  Data Path: XLXI_15/current_display_0 to cathodes<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             16   0.591   1.209  XLXI_15/current_display_0 (XLXI_15/current_display_0)
+     LUT3:I0->O            1   0.704   0.000  XLXI_15/Mmux_current_nibble_3 (XLXI_15/Mmux_current_nibble_3)
+     MUXF5:I1->O           7   0.321   0.883  XLXI_15/Mmux_current_nibble_2_f5 (XLXI_15/current_nibble<0>)
+     LUT4:I0->O            1   0.704   0.420  XLXI_15/Mrom_cathodes31 (cathodes_3_OBUF)
+     OBUF:I->O                 3.272          cathodes_3_OBUF (cathodes<3>)
+    ----------------------------------------
+    Total                      8.104ns (5.592ns logic, 2.512ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6531 / 16
+-------------------------------------------------------------------------
+Offset:              16.607ns (Levels of Logic = 9)
+  Source:            GPP_Test/PROGRAM_COUNTER/q_3 (FF)
+  Destination:       led<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: GPP_Test/PROGRAM_COUNTER/q_3 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.591   1.052  GPP_Test/PROGRAM_COUNTER/q_3 (GPP_Test/PROGRAM_COUNTER/q_3)
+     LUT4:I2->O           16   0.704   1.069  GPP_Test/INSTRUCTION_PROM/INSTRUCTION_SELECT/Mmux_o21_1 (GPP_Test/INSTRUCTION_PROM/INSTRUCTION_SELECT/Mmux_o21)
+     LUT3:I2->O            1   0.704   0.000  GPP_Test/REG_FILE/XLXI_2/Mmux_o_3 (GPP_Test/REG_FILE/XLXI_2/Mmux_o_3)
+     MUXF5:I1->O           1   0.321   0.424  GPP_Test/REG_FILE/XLXI_2/Mmux_o_2_f5 (GPP_Test/Output_B<0>)
+     LUT4:I3->O            6   0.704   0.669  GPP_Test/INPUT_SEL/o<0>1 (GPP_Test/XLXN_73<0>)
+     MULT18X18SIO:B0->P7    1   4.344   0.499  GPP_Test/DATA_ALU/XLXI_94/Mmult_full_product (GPP_Test/DATA_ALU/XLXN_9<7>)
+     LUT2:I1->O            1   0.704   0.000  GPP_Test/DATA_ALU/XLXI_1/Mmux_o_47 (GPP_Test/DATA_ALU/XLXI_1/Mmux_o_47)
+     MUXF5:I1->O           1   0.321   0.000  GPP_Test/DATA_ALU/XLXI_1/Mmux_o_3_f5_6 (GPP_Test/DATA_ALU/XLXI_1/Mmux_o_3_f57)
+     MUXF6:I1->O           7   0.521   0.708  GPP_Test/DATA_ALU/XLXI_1/Mmux_o_2_f6_6 (led_7_OBUF)
+     OBUF:I->O                 3.272          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                     16.607ns (12.186ns logic, 4.421ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 131 / 8
+-------------------------------------------------------------------------
+Delay:               13.555ns (Levels of Logic = 7)
+  Source:            SW<1> (PAD)
+  Destination:       led<7> (PAD)
+
+  Data Path: SW<1> to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  SW_1_IBUF (SW_1_IBUF)
+     LUT4:I0->O            6   0.704   0.669  GPP_Test/INPUT_SEL/o<1>1 (GPP_Test/XLXN_73<1>)
+     MULT18X18SIO:B1->P7    1   4.344   0.499  GPP_Test/DATA_ALU/XLXI_94/Mmult_full_product (GPP_Test/DATA_ALU/XLXN_9<7>)
+     LUT2:I1->O            1   0.704   0.000  GPP_Test/DATA_ALU/XLXI_1/Mmux_o_47 (GPP_Test/DATA_ALU/XLXI_1/Mmux_o_47)
+     MUXF5:I1->O           1   0.321   0.000  GPP_Test/DATA_ALU/XLXI_1/Mmux_o_3_f5_6 (GPP_Test/DATA_ALU/XLXI_1/Mmux_o_3_f57)
+     MUXF6:I1->O           7   0.521   0.708  GPP_Test/DATA_ALU/XLXI_1/Mmux_o_2_f6_6 (led_7_OBUF)
+     OBUF:I->O                 3.272          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                     13.555ns (11.084ns logic, 2.471ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.48 secs
+ 
+--> 
+
+Total memory usage is 298776 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

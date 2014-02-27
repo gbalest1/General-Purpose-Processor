@@ -1,0 +1,1 @@
+The '.xise' project file can be opened in Xilinx ISE Project Navigator. I used a Papilio One 500K FPGA Design Board and the LogicStart MegaWing Input/Output Board in order to implement my circuit. Once you have programmed the bitfile to your Papilio board, press the joystick to move to the next instruction in the instruction ROM.

@@ -1,0 +1,332 @@
+V3 192
+FL C:/Users/Gianluca/EECE287/Lab5/Adder_4.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Adder_4 1393365521 FL C:/Users/Gianluca/EECE287/Lab5/Adder_4.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/Adder_4/Behavioral 1393365522 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Adder_4.vhd EN work/Adder_4 1393365521
+FL C:/Users/Gianluca/EECE287/Lab5/Adder_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Adder_8 1393365533 FL C:/Users/Gianluca/EECE287/Lab5/Adder_8.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/Adder_8/Behavioral 1393365534 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Adder_8.vhd EN work/Adder_8 1393365533
+FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf 2014/02/25.16:58:27 P.15xf
+EN work/M2_1E_MXILINX_ALU 1393365597 FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/M2_1E_MXILINX_ALU/BEHAVIORAL 1393365598 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf EN work/M2_1E_MXILINX_ALU 1393365597 \
+      CP AND3 CP AND3B1 CP OR2
+EN work/M8_1E_MXILINX_ALU 1393365599 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/M8_1E_MXILINX_ALU/BEHAVIORAL 1393365600 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf EN work/M8_1E_MXILINX_ALU 1393365599 \
+      CP M2_1E_MXILINX_ALU CP MUXF5_L CP MUXF6
+EN work/ALU 1393365601 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/ALU/BEHAVIORAL 1393365602 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ALU.vhf EN work/ALU 1393365601 CP Mux8_8 \
+      CP BitXor2_8 CP BitAnd2_8 CP BitOr2_8 CP Adder_8 CP ShiftRightLogical_8 \
+      CP Subtractor_8 CP EqualityComp_8 CP BUF CP M8_1E_MXILINX_ALU CP VCC CP GND \
+      CP Multiplier_Overflow_8
+FL C:/Users/Gianluca/EECE287/Lab5/BitAnd2_8.vhd 2014/02/25.13:31:37 P.15xf
+EN work/BitAnd2_8 1393365529 FL C:/Users/Gianluca/EECE287/Lab5/BitAnd2_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/BitAnd2_8/Behavioral 1393365530 \
+      FL C:/Users/Gianluca/EECE287/Lab5/BitAnd2_8.vhd EN work/BitAnd2_8 1393365529
+FL C:/Users/Gianluca/EECE287/Lab5/BitOr2_8.vhd 2014/02/25.13:31:37 P.15xf
+EN work/BitOr2_8 1393365531 FL C:/Users/Gianluca/EECE287/Lab5/BitOr2_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/BitOr2_8/Behavioral 1393365532 \
+      FL C:/Users/Gianluca/EECE287/Lab5/BitOr2_8.vhd EN work/BitOr2_8 1393365531
+FL C:/Users/Gianluca/EECE287/Lab5/BitXor2_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/BitXor2_8 1393365527 FL C:/Users/Gianluca/EECE287/Lab5/BitXor2_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/BitXor2_8/Behavioral 1393365528 \
+      FL C:/Users/Gianluca/EECE287/Lab5/BitXor2_8.vhd EN work/BitXor2_8 1393365527
+FL C:/Users/Gianluca/EECE287/Lab5/ControlALU.vhf 2014/02/25.16:58:25 P.15xf
+EN work/ControlALU 1393365603 FL C:/Users/Gianluca/EECE287/Lab5/ControlALU.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/ControlALU/BEHAVIORAL 1393365604 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ControlALU.vhf EN work/ControlALU 1393365603 \
+      CP Mux16_4 CP Adder_4 CP Mux2_4
+FL C:/Users/Gianluca/EECE287/Lab5/debouncer.vhd 2014/02/25.13:31:36 P.15xf
+EN work/debouncer 1393365549 FL C:/Users/Gianluca/EECE287/Lab5/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/debouncer/Behavioral 1393365550 \
+      FL C:/Users/Gianluca/EECE287/Lab5/debouncer.vhd EN work/debouncer 1393365549
+FL C:/Users/Gianluca/EECE287/Lab5/EqualityComp_8.vhd 2014/02/25.13:31:37 P.15xf
+EN work/EqualityComp_8 1393365539 \
+      FL C:/Users/Gianluca/EECE287/Lab5/EqualityComp_8.vhd PB ieee/std_logic_1164 1335251622
+AR work/EqualityComp_8/Behavioral 1393365540 \
+      FL C:/Users/Gianluca/EECE287/Lab5/EqualityComp_8.vhd EN work/EqualityComp_8 1393365539
+FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf 2014/02/25.16:58:27 P.15xf
+EN work/M2_1E_MXILINX_GPP 1393365577 FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/M2_1E_MXILINX_GPP/BEHAVIORAL 1393365578 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/M2_1E_MXILINX_GPP 1393365577 \
+      CP AND3 CP AND3B1 CP OR2
+EN work/M8_1E_MXILINX_GPP 1393365579 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/M8_1E_MXILINX_GPP/BEHAVIORAL 1393365580 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/M8_1E_MXILINX_GPP 1393365579 \
+      CP M2_1E_MXILINX_GPP CP MUXF5_L CP MUXF6
+EN work/ALU_MUSER_GPP 1393365581 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/ALU_MUSER_GPP/BEHAVIORAL 1393365582 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/ALU_MUSER_GPP 1393365581 \
+      CP Mux8_8 CP BitXor2_8 CP BitAnd2_8 CP BitOr2_8 CP Adder_8 \
+      CP ShiftRightLogical_8 CP Subtractor_8 CP EqualityComp_8 CP BUF \
+      CP M8_1E_MXILINX_GPP CP VCC CP GND CP Multiplier_Overflow_8
+EN work/D2_4E_MXILINX_GPP 1393365583 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/D2_4E_MXILINX_GPP/BEHAVIORAL 1393365584 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/D2_4E_MXILINX_GPP 1393365583 \
+      CP AND3 CP AND3B1 CP AND3B2
+EN work/RegFile_MUSER_GPP 1393365585 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/RegFile_MUSER_GPP/BEHAVIORAL 1393365586 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/RegFile_MUSER_GPP 1393365585 \
+      CP Mux4_8 CP RegParallelLoad_8 CP D2_4E_MXILINX_GPP
+EN work/Instruction_ROM_MUSER_GPP 1393365587 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/Instruction_ROM_MUSER_GPP/BEHAVIORAL 1393365588 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/Instruction_ROM_MUSER_GPP 1393365587 \
+      CP Mux16_9
+EN work/ControlALU_MUSER_GPP 1393365589 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/ControlALU_MUSER_GPP/BEHAVIORAL 1393365590 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/ControlALU_MUSER_GPP 1393365589 \
+      CP Mux16_4 CP Adder_4 CP Mux2_4
+EN work/Instruction_Decoder_MUSER_GPP 1393365591 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/Instruction_Decoder_MUSER_GPP/BEHAVIORAL 1393365592 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf \
+      EN work/Instruction_Decoder_MUSER_GPP 1393365591 CP VCC CP GND CP Mux16_3 \
+      CP BUF
+EN work/RegParallelLoad_1_MUSER_GPP 1393365593 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/RegParallelLoad_1_MUSER_GPP/BEHAVIORAL 1393365594 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf \
+      EN work/RegParallelLoad_1_MUSER_GPP 1393365593 CP FDE
+EN work/GPP 1393365595 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/GPP/BEHAVIORAL 1393365596 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPP.vhf EN work/GPP 1393365595 \
+      CP ControlALU_MUSER_GPP CP RegParallelLoad_1_MUSER_GPP CP ALU_MUSER_GPP \
+      CP Mux2_8 CP Instruction_ROM_MUSER_GPP CP Instruction_Decoder_MUSER_GPP \
+      CP RegParallelLoad_4 CP RegFile_MUSER_GPP CP AND2 CP AND2B1
+FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf 2014/02/25.16:58:26 P.15xf
+EN work/M2_1E_MXILINX_GPPTestCircuit 1393365555 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/M2_1E_MXILINX_GPPTestCircuit/BEHAVIORAL 1393365556 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/M2_1E_MXILINX_GPPTestCircuit 1393365555 CP AND3 CP AND3B1 CP OR2
+EN work/M8_1E_MXILINX_GPPTestCircuit 1393365557 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/M8_1E_MXILINX_GPPTestCircuit/BEHAVIORAL 1393365558 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/M8_1E_MXILINX_GPPTestCircuit 1393365557 \
+      CP M2_1E_MXILINX_GPPTestCircuit CP MUXF5_L CP MUXF6
+EN work/ALU_MUSER_GPPTestCircuit 1393365559 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/ALU_MUSER_GPPTestCircuit/BEHAVIORAL 1393365560 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/ALU_MUSER_GPPTestCircuit 1393365559 CP Mux8_8 CP BitXor2_8 \
+      CP BitAnd2_8 CP BitOr2_8 CP Adder_8 CP ShiftRightLogical_8 CP Subtractor_8 \
+      CP EqualityComp_8 CP BUF CP M8_1E_MXILINX_GPPTestCircuit CP VCC CP GND \
+      CP Multiplier_Overflow_8
+EN work/D2_4E_MXILINX_GPPTestCircuit 1393365561 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/D2_4E_MXILINX_GPPTestCircuit/BEHAVIORAL 1393365562 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/D2_4E_MXILINX_GPPTestCircuit 1393365561 CP AND3 CP AND3B1 CP AND3B2
+EN work/RegFile_MUSER_GPPTestCircuit 1393365563 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/RegFile_MUSER_GPPTestCircuit/BEHAVIORAL 1393365564 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/RegFile_MUSER_GPPTestCircuit 1393365563 CP Mux4_8 \
+      CP RegParallelLoad_8 CP D2_4E_MXILINX_GPPTestCircuit
+EN work/Instruction_ROM_MUSER_GPPTestCircuit 1393365565 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/Instruction_ROM_MUSER_GPPTestCircuit/BEHAVIORAL 1393365566 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/Instruction_ROM_MUSER_GPPTestCircuit 1393365565 CP Mux16_9
+EN work/ControlALU_MUSER_GPPTestCircuit 1393365567 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/ControlALU_MUSER_GPPTestCircuit/BEHAVIORAL 1393365568 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/ControlALU_MUSER_GPPTestCircuit 1393365567 CP Mux16_4 CP Adder_4 \
+      CP Mux2_4
+EN work/Instruction_Decoder_MUSER_GPPTestCircuit 1393365569 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/Instruction_Decoder_MUSER_GPPTestCircuit/BEHAVIORAL 1393365570 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/Instruction_Decoder_MUSER_GPPTestCircuit 1393365569 CP VCC CP GND \
+      CP Mux16_3 CP BUF
+EN work/RegParallelLoad_1_MUSER_GPPTestCircuit 1393365571 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/RegParallelLoad_1_MUSER_GPPTestCircuit/BEHAVIORAL 1393365572 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/RegParallelLoad_1_MUSER_GPPTestCircuit 1393365571 CP FDE
+EN work/GPP_MUSER_GPPTestCircuit 1393365573 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/GPP_MUSER_GPPTestCircuit/BEHAVIORAL 1393365574 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf \
+      EN work/GPP_MUSER_GPPTestCircuit 1393365573 \
+      CP ControlALU_MUSER_GPPTestCircuit \
+      CP RegParallelLoad_1_MUSER_GPPTestCircuit CP ALU_MUSER_GPPTestCircuit \
+      CP Mux2_8 CP Instruction_ROM_MUSER_GPPTestCircuit \
+      CP Instruction_Decoder_MUSER_GPPTestCircuit CP RegParallelLoad_4 \
+      CP RegFile_MUSER_GPPTestCircuit CP AND2 CP AND2B1
+EN work/GPPTestCircuit 1393365575 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/GPPTestCircuit/BEHAVIORAL 1393365576 \
+      FL C:/Users/Gianluca/EECE287/Lab5/GPPTestCircuit.vhf EN work/GPPTestCircuit 1393365575 \
+      CP GPP_MUSER_GPPTestCircuit CP BUF CP synchronizer CP debouncer CP pulser \
+      CP sseg_driver CP GND CP INV
+FL C:/Users/Gianluca/EECE287/Lab5/Instruction_Decoder.vhf 2014/02/25.16:58:26 P.15xf
+EN work/Instruction_Decoder 1393365605 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Instruction_Decoder.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/Instruction_Decoder/BEHAVIORAL 1393365606 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Instruction_Decoder.vhf \
+      EN work/Instruction_Decoder 1393365605 CP VCC CP GND CP Mux16_3 CP BUF
+FL C:/Users/Gianluca/EECE287/Lab5/Instruction_ROM.vhf 2014/02/25.16:58:27 P.15xf
+EN work/Instruction_ROM 1393365607 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Instruction_ROM.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/Instruction_ROM/BEHAVIORAL 1393365608 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Instruction_ROM.vhf \
+      EN work/Instruction_ROM 1393365607 CP Mux16_9
+FL C:/Users/Gianluca/EECE287/Lab5/Multiplier_Overflow_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Multiplier_Overflow_8 1393365541 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Multiplier_Overflow_8.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_misc 1335251624 \
+      PB ieee/NUMERIC_STD 1335251627
+AR work/Multiplier_Overflow_8/Behavioral 1393365542 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Multiplier_Overflow_8.vhd \
+      EN work/Multiplier_Overflow_8 1393365541
+FL C:/Users/Gianluca/EECE287/Lab5/Mux16_3.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux16_3 1393365517 FL C:/Users/Gianluca/EECE287/Lab5/Mux16_3.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux16_3/Behavioral 1393365518 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux16_3.vhd EN work/Mux16_3 1393365517
+FL C:/Users/Gianluca/EECE287/Lab5/Mux16_4.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux16_4 1393365519 FL C:/Users/Gianluca/EECE287/Lab5/Mux16_4.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux16_4/Behavioral 1393365520 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux16_4.vhd EN work/Mux16_4 1393365519
+FL C:/Users/Gianluca/EECE287/Lab5/Mux16_9.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux16_9 1393365515 FL C:/Users/Gianluca/EECE287/Lab5/Mux16_9.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux16_9/Behavioral 1393365516 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux16_9.vhd EN work/Mux16_9 1393365515
+FL C:/Users/Gianluca/EECE287/Lab5/Mux2_4.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux2_4 1393365523 FL C:/Users/Gianluca/EECE287/Lab5/Mux2_4.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux2_4/Behavioral 1393365524 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux2_4.vhd EN work/Mux2_4 1393365523
+FL C:/Users/Gianluca/EECE287/Lab5/Mux2_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux2_8 1393365543 FL C:/Users/Gianluca/EECE287/Lab5/Mux2_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux2_8/Behavioral 1393365544 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux2_8.vhd EN work/Mux2_8 1393365543
+FL C:/Users/Gianluca/EECE287/Lab5/Mux4_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux4_8 1393365511 FL C:/Users/Gianluca/EECE287/Lab5/Mux4_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux4_8/Behavioral 1393365512 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux4_8.vhd EN work/Mux4_8 1393365511
+FL C:/Users/Gianluca/EECE287/Lab5/Mux8_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Mux8_8 1393365525 FL C:/Users/Gianluca/EECE287/Lab5/Mux8_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/Mux8_8/Behavioral 1393365526 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Mux8_8.vhd EN work/Mux8_8 1393365525
+FL C:/Users/Gianluca/EECE287/Lab5/pulser.vhd 2014/02/25.13:31:36 P.15xf
+EN work/pulser 1393365551 FL C:/Users/Gianluca/EECE287/Lab5/pulser.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/pulser/Behavioral 1393365552 \
+      FL C:/Users/Gianluca/EECE287/Lab5/pulser.vhd EN work/pulser 1393365551
+FL C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf 2014/02/25.16:58:27 P.15xf
+EN work/D2_4E_MXILINX_RegFile 1393365609 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/D2_4E_MXILINX_RegFile/BEHAVIORAL 1393365610 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf EN work/D2_4E_MXILINX_RegFile 1393365609 \
+      CP AND3 CP AND3B1 CP AND3B2
+EN work/RegFile 1393365611 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627 LB UNISIM PH unisim/VCOMPONENTS 1335251629
+AR work/RegFile/BEHAVIORAL 1393365612 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegFile.vhf EN work/RegFile 1393365611 \
+      CP Mux4_8 CP RegParallelLoad_8 CP D2_4E_MXILINX_RegFile
+FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_1.vhf 2014/02/25.16:58:28 P.15xf
+EN work/RegParallelLoad_1 1393365613 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_1.vhf \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627 LB UNISIM \
+      PH unisim/VCOMPONENTS 1335251629
+AR work/RegParallelLoad_1/BEHAVIORAL 1393365614 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_1.vhf \
+      EN work/RegParallelLoad_1 1393365613 CP FDE
+FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_4.vhd 2014/02/25.13:31:36 P.15xf
+EN work/RegParallelLoad_4 1393365545 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_4.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/RegParallelLoad_4/Behavioral 1393365546 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_4.vhd \
+      EN work/RegParallelLoad_4 1393365545
+FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/RegParallelLoad_8 1393365513 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_8.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/RegParallelLoad_8/Behavioral 1393365514 \
+      FL C:/Users/Gianluca/EECE287/Lab5/RegParallelLoad_8.vhd \
+      EN work/RegParallelLoad_8 1393365513
+FL C:/Users/Gianluca/EECE287/Lab5/ShiftRightLogical_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/ShiftRightLogical_8 1393365535 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ShiftRightLogical_8.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/ShiftRightLogical_8/Behavioral 1393365536 \
+      FL C:/Users/Gianluca/EECE287/Lab5/ShiftRightLogical_8.vhd \
+      EN work/ShiftRightLogical_8 1393365535
+FL C:/Users/Gianluca/EECE287/Lab5/sseg_driver.vhd 2014/02/25.13:31:37 P.15xf
+EN work/sseg_driver 1393365553 FL C:/Users/Gianluca/EECE287/Lab5/sseg_driver.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/NUMERIC_STD 1335251627
+AR work/sseg_driver/Behavioral 1393365554 \
+      FL C:/Users/Gianluca/EECE287/Lab5/sseg_driver.vhd EN work/sseg_driver 1393365553
+FL C:/Users/Gianluca/EECE287/Lab5/Subtractor_8.vhd 2014/02/25.13:31:36 P.15xf
+EN work/Subtractor_8 1393365537 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Subtractor_8.vhd PB ieee/std_logic_1164 1335251622 \
+      PB ieee/NUMERIC_STD 1335251627
+AR work/Subtractor_8/Behavioral 1393365538 \
+      FL C:/Users/Gianluca/EECE287/Lab5/Subtractor_8.vhd EN work/Subtractor_8 1393365537
+FL C:/Users/Gianluca/EECE287/Lab5/synchronizer.vhd 2014/02/25.13:31:36 P.15xf
+EN work/synchronizer 1393365547 \
+      FL C:/Users/Gianluca/EECE287/Lab5/synchronizer.vhd PB ieee/std_logic_1164 1335251622
+AR work/synchronizer/Behavioral 1393365548 \
+      FL C:/Users/Gianluca/EECE287/Lab5/synchronizer.vhd EN work/synchronizer 1393365547
